@@ -1,3 +1,5 @@
+import { resolve } from 'path'
+
 module.exports = {
   siteMetadata: {
     title: 'Corido - Blog from Richard Widjaya',
@@ -6,6 +8,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-theme-ui',
+      options: {
+        preset: '@theme-ui/polaris'
+      }
+    },
     {
       resolve: 'gatsby-plugin-sass'
     },
