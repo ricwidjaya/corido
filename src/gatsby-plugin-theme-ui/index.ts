@@ -1,10 +1,20 @@
-import { polaris } from '@theme-ui/presets'
+import carbonplan from '@carbonplan/theme'
 
 const theme = {
-  ...polaris,
+  ...carbonplan,
   colors: {
-    text: '#000',
-    background: '#fff'
+    text: '#1b1e23',
+    background: 'fff'
+  },
+  config: {
+    initialColorModeName: 'light'
+  },
+  images: {
+    avatar: {
+      width: 68,
+      height: 68,
+      borderRadius: 99999
+    }
   }
 }
 

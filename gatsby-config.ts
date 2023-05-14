@@ -1,5 +1,3 @@
-import { resolve } from 'path'
-
 module.exports = {
   siteMetadata: {
     title: 'Corido - Blog from Richard Widjaya',
@@ -11,7 +9,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-theme-ui',
       options: {
-        preset: '@theme-ui/polaris'
+        preset: '@carbonplan/theme'
       }
     },
     {
