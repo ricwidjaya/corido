@@ -15,7 +15,8 @@ const theme = {
       height: 68,
       borderRadius: 99999
     }
-  }
+  },
+  breakpoints: ['@media (min-width: 768px)']
 }
 
 export default theme

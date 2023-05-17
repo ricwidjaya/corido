@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, Flex, Image, NavLink } from 'theme-ui'
+import { Box, Container, Flex, Image, MenuButton, NavLink } from 'theme-ui'
 import logo from '../../img/logo.svg'
 
 const Navbar = () => {
@@ -7,12 +7,38 @@ const Navbar = () => {
   // const [isActive, setIsActive] = useState(false)
 
   return (
-    <Container p={2} as="nav">
-      <Flex>
-        <Box sx={{ flex: '1 1 auto' }}>
+    <Container as="nav">
+      <Flex
+        css={{
+          justifyContent: 'space-between'
+        }}>
+        <Box>
           <Image src={logo} variant="avatar" />
         </Box>
-        <Flex>
+
+        {/* Mobile Nav Button */}
+        <Box>
+          <MenuButton
+            aria-label="Toggle Menu"
+            sx={{
+              display: 'block',
+              '@media (min-width: 768px)': {
+                display: 'none'
+              }
+            }}
+            py={4}
+            mr={3}
+          />
+        </Box>
+
+        {/* Desktop Nav */}
+        <Flex
+          sx={{
+            display: 'none',
+            '@media (min-width: 768px)': {
+              display: 'block'
+            }
+          }}>
           <NavLink href="/" p={4}>
             Home
           </NavLink>
