@@ -1,0 +1,19 @@
+.sideNav {
+  height: 100%;
+  width: 75%;
+  z-index: 999;
+  position: fixed;
+}
+
+.sideNavShow {
+  display: block;
+}
+
+.sideNavNone {
+  display: none;
+}
+
+.closeBtn {
+  border: none;
+  background-color: inherit;
+}
